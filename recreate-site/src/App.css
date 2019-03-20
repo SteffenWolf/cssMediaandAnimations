@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.headWrap {
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+  align-items: center;
+  list-style: none;
+  padding: 25px;
+  position: fixed;
+  width: 100%
+}
+
+.logo {
+  color: #fed136;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 28px;
+  white-space: nowrap;
+}
+
+nav {
+  position: fixed;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-self: center;
+  align-items: center;
+  list-style: none;
+  width: 90%;
+  padding: .5rem 1rem;
+  
+  
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.show {
+  display: none;
+  color: white;
+  background-color: #212529;
+}
+
+nav li {
+  padding: 8px;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1em;
+}
+
+.hidden-nav{
+  color: white;
+  font-family: 'Roboto Slab', serif;
+  background-color: #212529;
+  width: 100%;
+  list-style: none;
+  position: absolute;
+  margin-bottom: -60px;
+  overflow-y: hidden;
+   z-index: 0;
+  top: 0;
+  left: 0;
+  transition: 100s;
+  padding-top: 50px;
+  padding-left: 25px;
+  padding-bottom: 15px;
+}
+
+.hidden-nav li {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #818181;
+  display: block;
+  transition: 2s;
+}
+
+
+.hidden-nav li:hover{
+  color: #fed136;
+  transition: 1s;
+}
+
+
+
+.stack{
+  display: none;
+  border-radius: 10%;
+  background-color: #fed136;
+  font-family: 'Roboto Slab', serif;
+  border: none
+}
+
+ul li:hover {
+  color: #fed136;
+  transition: 1s
+}
+
+
+@media (max-width: 992px){
+  .list {display: none}
+  .headWrap{background: #212529}
+  .stack{font-size: 36}
+  .stack{display: inline}
+  .stack{padding: 10px}
+  .stack{color: white}
+}
+
+@media (min-width: 991px){
+  .hidden-nav {display: none}
+}
+
+@keyframes expand {
+
+}
+
